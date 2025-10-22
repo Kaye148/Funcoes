@@ -6,7 +6,7 @@ for i in range (1):
     altura = float(input("inform sua altura: "))
 
 def imc(peso, altura):
-    return (altura*2)+(peso/altura) 
+    return (altura**2)/(peso/altura) 
 
 reposta_imc = imc(peso, altura)
 
@@ -32,5 +32,6 @@ match reposta_imc:
         print("obesidade grau 3\n busque assistencia médica imediatamente")
     case _:
         print("")
+
 
 print(f"{reposta_imc:.2f}")
